@@ -6,12 +6,14 @@ import authRoute from "./routes/auth.js";
 import hotelRoute from "./routes/hotel.js";
 import roomRoute from "./routes/rooms.js";
 import userRoute from "./routes/users.js";
+import cors from 'cors'
 const app=express();
 app.use(express.json());
 
 app.use(express.urlencoded({extended:true}))
 
 app.use(cookieParser());
+app.use(cors());
 
 dotenv.config()
 const connect=async()=>{
