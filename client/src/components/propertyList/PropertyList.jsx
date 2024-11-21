@@ -1,7 +1,7 @@
 import "./propertyList.css";
 import useFetch from "../../Hooks/useFetch.js"
 const PropertyList = () => {
-  const {data,loading}=useFetch("/hotel/countByType");
+  const {data,loading}=useFetch("http://localhost:8800/api/hotel/countByType");
   const images=[
     "https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
    "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWxzfGVufDB8fDB8fHww",

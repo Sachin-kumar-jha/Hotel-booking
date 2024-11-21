@@ -11,9 +11,8 @@ const app=express();
 app.use(express.json());
 
 app.use(express.urlencoded({extended:true}))
-
-app.use(cookieParser());
 app.use(cors());
+app.use(cookieParser());
 
 dotenv.config()
 const connect=async()=>{
@@ -39,7 +38,7 @@ app.use("/api/rooms",roomRoute);
 app.use("/api/users",userRoute);
 
 
-app.listen(3000,()=>{
+app.listen(8800,()=>{
     connect()
-    console.log("connected to backend + http://localhost:3000")
+    console.log("connected to backend + http://localhost:8800")
 })

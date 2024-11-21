@@ -1,8 +1,8 @@
 import "./featuredProperties.css";
 import useFetch from '../../Hooks/useFetch'
 
-const FeaturedProperties = () => {
-const {data,loading}=useFetch("/hotel?featured=true&limit=4");
+const FeaturedProperties = () =>{
+const {data,loading}=useFetch("http://localhost:8800/api/hotel?featured=true&limit=4 ");
   return (
     <div className="fp">
       { loading ? "loading"  : <>

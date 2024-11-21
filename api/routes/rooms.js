@@ -16,7 +16,7 @@ router.get("/:id",GetByidRoom);
 router.get("/",GetAllRoom);
 
 //DELETE
-router.delete("/:id/:hotelid", verifyAdmin,DeleteRoom)
+router.delete("/:id/:hotelid", verifyAdmin,DeleteRoom);
 
 
 
