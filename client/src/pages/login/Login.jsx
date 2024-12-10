@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthContext'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import "./login.css"
 const Login = () => {
     const [crendential,setCredential]=useState({username:undefined,password:undefined,});
 
